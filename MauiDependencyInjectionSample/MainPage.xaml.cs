@@ -1,5 +1,4 @@
 ﻿using Microsoft.Maui.Controls;
-using Microsoft.Maui.Essentials;
 using System;
 
 namespace MauiDependencyInjectionSample
@@ -19,8 +18,6 @@ namespace MauiDependencyInjectionSample
         {
             count++;
             CounterLabel.Text = $"Current count: {count}";
-
-            SemanticScreenReader.Announce(CounterLabel.Text);
         }
     }
 }
